@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Para você, meu amor 💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0b1220, #1e293b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      color: #e5e7eb;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 20px;
+      max-width: 800px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at top left, rgba(52, 211, 153, 0.18), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.18), transparent 60%);
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    .title-small {
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 4px;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #f9fafb;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #d1d5db;
+      margin-bottom: 20px;
+    }
+
+    .separator {
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #4ade80, transparent);
+      margin: 8px 0 18px;
+      opacity: 0.7;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      border: none;
+      border-radius: 999px;
+      padding: 10px 20px;
+      color: #f9fafb;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(22, 163, 74, 0.45);
+      margin-bottom: 14px;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(22, 163, 74, 0.5);
+    }
+
+    .message {
+      margin-top: 4px;
+      line-height: 1.55;
+      font-size: 0.97rem;
+      color: #e5e7eb;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: max-height 0.45s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .message.open {
+      max-height: 5000px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .message p + p {
+      margin-top: 12px;
+    }
+
+    .signature {
+      margin-top: 16px;
+      font-size: 1rem;
+      color: #c4c4ff;
+    }
+
+    .signature strong {
+      color: #a5b4fc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="title-small">PARA</div>
+    <div class="name">Giovana 💚</div>
+    <div class="subtitle">Clique abaixo para abrir sua cartinha especial:</div>
+
+    <div class="separator"></div>
+
+    <button class="button" id="openMessageBtn">💌 Abrir cartinha</button>
+
+    <div class="message" id="messageBox">
+      <p>Meu amor, é difícil até saber por onde começar a te escrever isso, pois lembro de vários momentos e situações que vivemos juntos, e fica difícil escolher apenas um. Mas me lembro perfeitamente do dia em que te vi pela primeira vez na célula. Algo tocou meu coração naquele instante. Eu não sabia o que era, mas sabia que era um sentimento de admiração por quem você é.</p>
+
+      <p>Desde aquele primeiro momento eu senti que você era alguém extraordinário. Eu já conseguia sentir o seu coração cuidadoso e generoso, já via o Espírito Santo brilhando nos seus olhos. Você diz que mudou muito e realmente mudou mas existem virtudes que você sempre teve, mesmo antes de perceber. E graças ao Senhor Jesus, hoje você consegue enxergar isso.</p>
+
+      <p>Eu costumo dizer que todo mundo deveria ter uma Gi na vida. Porque, se todos tivessem alguém como você ao lado, todos seriam mais felizes, mais leves e mais realizados. Você muda meu humor só de me mandar uma mensagem. Você me tira um sorriso só de falar. Para mim, você é a mulher mais inteligente e capacitada do mundo, em qualquer situação. Eu me inspiro em você todos os dias.</p>
+
+      <p>Eu poderia te dar mil adjetivos, mas existe um que é maior que todos: filha do Deus vivo. E não qualquer filha — mas uma joia rara do Senhor. É impossível olhar para você e não ver o brilho do Espírito Santo. É lindo perceber cada detalhe que Deus moldou em você, cada parte única e exclusivamente sua. E eu me apaixono diariamente por cada detalhe.</p>
+
+      <p>Me perco reparando na cor dos seus olhos, no seu cabelo, no seu sorriso, nas suas barroquinhas, no seu jeito de agir, na sua risada, na sinceridade de cada ação sua. Isso só me faz te amar ainda mais. Eu nunca conheci alguém com tanta beleza, essência e perfeição quanto você. Não é à toa que digo todos os dias que você é minha bênção do Senhor — uma bênção além do que eu podia imaginar.</p>
+
+      <p>A mulher de Provérbios é conhecida como uma inspiração para outras mulheres e como alguém desejada por homens sábios. E você é exatamente essa mulher: virtuosa, sábia, cuidadosa com a família e, acima de tudo, temente a Deus. Esse temor sustenta todas as suas outras qualidades e te leva a lugares inimagináveis.</p>
+
+      <p>Hoje eu não consigo mais me ver sem ter você ao meu lado. Só de imaginar te perder me dá calafrios. Mas eu descanso no fato de que, se não for da vontade do Senhor, isso nunca acontecerá. Deus não nos uniu por acaso — Ele uniu propósitos. E nós vamos vivê-los juntinhos.</p>
+
+      <p>Eu poderia escrever por horas e ainda assim não conseguiria expressar tudo o que sinto. Mas antes de tudo, eu preciso te agradecer. Agradecer por quem você é. Agradecer pelo que faz por mim. Agradecer por me fazer o homem mais feliz do mundo. Agradecer por viver o nosso propósito comigo. Agradecer por não desistir de nós. Agradecer pelas orações, pelo cuidado, pela amizade, pela parceria. Agradecer por enfrentar desafios ao meu lado. Agradecer por ser minha companheira e melhor amiga.</p>
+
+      <p>Nesse dia especial, eu quero te desejar um aniversário maravilhoso. Que o Senhor cuide de você em mais uma primavera que se completa, e na nova que se inicia. Que Ele te guie, te abençoe e te use para alcançar multidões.</p>
+
+      <p>Feliz aniversário, meu amor. Feliz 26 anos. Que Deus prolongue seus dias por décadas e décadas. Que Ele realize cada sonho seu. E que Ele permita que eu viva todos esses dias ao seu lado em todos os momentos, sejam bons ou ruins.</p>
+
+      <p>Não esquece nunca que eu te amo demais. Você é a mulher da minha vida. A futura mãe dos meus filhos. Minha esposa. Minha bênção. Minha única. Meu amor para a vida inteira. Hoje só existe esse André porque Deus quis e porque você entrou na minha vida. Tudo se fez novo através de você.</p>
+
+      <p>Enfim, minha vida… aproveite muito o seu dia. Mais tarde eu vou ver a mulher mais linda do mundo, te abraçar e te beijar pessoalmente.</p>
+
+      <p class="signature">
+        Com todo o amor do mundo,<br>
+        <strong>André 💚</strong>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById("openMessageBtn");
+    const box = document.getElementById("messageBox");
+
+    btn.addEventListener("click", () => {
+      box.classList.toggle("open");
+      btn.textContent = box.classList.contains("open")
+        ? "💌 Fechar cartinha"
+        : "💌 Abrir cartinha";
+    });
+  </script>
+</body>
+</html>
